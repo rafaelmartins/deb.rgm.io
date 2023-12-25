@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Mon, 25 Dec 2023 06:34:14 +0000
+Source: blogc
+Binary: blogc blogc-git-receiver blogc-make blogc-runserver
+Architecture: arm64
+Version: 0.20.1-1~13trixie
+Distribution: trixie
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ blogc      - Blog compiler
+ blogc-git-receiver - Blog compiler
+ blogc-make - Blog compiler
+ blogc-runserver - Blog compiler
+Changes:
+ blogc (0.20.1-1~13trixie) trixie; urgency=medium
+ .
+   * Automated build for trixie
+Checksums-Sha1:
+ 3f7748170f32c6d67037e64ee4360ff0063179cf 18992 blogc-git-receiver_0.20.1-1~13trixie_arm64.deb
+ 2fa9f989336b66ea6a4939dbfc2de1f019d034e2 29580 blogc-make_0.20.1-1~13trixie_arm64.deb
+ 5a6f253223218c11aad99733d9f7c88fc00e1255 15476 blogc-runserver_0.20.1-1~13trixie_arm64.deb
+ fbd1e0d80d95c2b72bc8548e4e9b09032804ca35 6333 blogc_0.20.1-1~13trixie_arm64.buildinfo
+ b11f6ffae86ff1255478b4326fd06583aa1f7c02 37988 blogc_0.20.1-1~13trixie_arm64.deb
+Checksums-Sha256:
+ ae397b4d3f003dfe5e4cd0f0c8cd7d5f7ee1055d79b6ab3c12a05b89f274c2c9 18992 blogc-git-receiver_0.20.1-1~13trixie_arm64.deb
+ 599497377233ee23044128c4d413d1e3466fb036ebc2e0a65d592771a38ed0d1 29580 blogc-make_0.20.1-1~13trixie_arm64.deb
+ 7eb9bb2b9fda0942c9d89f2c8b6cf0ef0dd23b7ce2b186ec4475d2aa4662e270 15476 blogc-runserver_0.20.1-1~13trixie_arm64.deb
+ 1e74f277521f569098805967fe49309d66b89b05dab2d2003c45b4653a303df4 6333 blogc_0.20.1-1~13trixie_arm64.buildinfo
+ a9e49e41701659f8c2247b651283c3be9bec9ad639dccf934475c0fe90682a71 37988 blogc_0.20.1-1~13trixie_arm64.deb
+Files:
+ 4f7318bc4fc89a38c4d5df5c79565cb2 18992 text optional blogc-git-receiver_0.20.1-1~13trixie_arm64.deb
+ 085f07a9a5d5e8cb23d28c98b72d350f 29580 text optional blogc-make_0.20.1-1~13trixie_arm64.deb
+ 41f8d5b47784a49a077694b13ae8d386 15476 text optional blogc-runserver_0.20.1-1~13trixie_arm64.deb
+ 1f093048c00833faa5d4d36e9f52905c 6333 text optional blogc_0.20.1-1~13trixie_arm64.buildinfo
+ 8e31105a3b49b021fe93ad4760331283 37988 text optional blogc_0.20.1-1~13trixie_arm64.deb

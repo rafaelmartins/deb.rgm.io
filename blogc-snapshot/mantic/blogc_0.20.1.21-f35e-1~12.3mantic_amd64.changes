@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Mon, 25 Dec 2023 06:34:14 +0000
+Source: blogc
+Binary: blogc blogc-git-receiver blogc-make blogc-runserver
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.20.1.21-f35e-1~12.3mantic
+Distribution: mantic
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ blogc      - Blog compiler
+ blogc-git-receiver - Blog compiler
+ blogc-make - Blog compiler
+ blogc-runserver - Blog compiler
+Changes:
+ blogc (0.20.1.21-f35e-1~12.3mantic) mantic; urgency=medium
+ .
+   * Automated build for mantic
+Checksums-Sha1:
+ 196710634226358becc8f9732a33d3938d4d05ef 20622 blogc-git-receiver_0.20.1.21-f35e-1~12.3mantic_amd64.deb
+ 2e6bda6f71db5279e34af7f8399d292e2acb4529 32442 blogc-make_0.20.1.21-f35e-1~12.3mantic_amd64.deb
+ 3b9ab57c0cec7d11da26a35494632894421fb4aa 17688 blogc-runserver_0.20.1.21-f35e-1~12.3mantic_amd64.deb
+ a6114361692db5b4f0342be5872f38cd555cabd0 7167 blogc_0.20.1.21-f35e-1~12.3mantic_amd64.buildinfo
+ 3cdae8d852d9056c0588df8c0a205705dcc3e4e2 42444 blogc_0.20.1.21-f35e-1~12.3mantic_amd64.deb
+Checksums-Sha256:
+ 5ce54a43c691d711d8c8fc1d1b5038687a3d81a6824e2dca2aa75225f3f2db8c 20622 blogc-git-receiver_0.20.1.21-f35e-1~12.3mantic_amd64.deb
+ 9780f988fcebbfe7fdcd9b2dec50c67c46d158458e90e523913ea2328d64ab82 32442 blogc-make_0.20.1.21-f35e-1~12.3mantic_amd64.deb
+ 61398711f5a6cb1306dc59efa97e282635e8ff5689bb7ec211163f552fe52bba 17688 blogc-runserver_0.20.1.21-f35e-1~12.3mantic_amd64.deb
+ ff984f85ad3db3f026d39ac40769882093c7c13ecd01e981e2eedc83e143700d 7167 blogc_0.20.1.21-f35e-1~12.3mantic_amd64.buildinfo
+ 2a85c31b5c911b928b31c184f8193ac89b3c7e938041f21bd0b88e54cd5df9e6 42444 blogc_0.20.1.21-f35e-1~12.3mantic_amd64.deb
+Files:
+ 5cc00dfd89867f607223870315d08d76 20622 text optional blogc-git-receiver_0.20.1.21-f35e-1~12.3mantic_amd64.deb
+ 9e29002b3826c9e98e9a4d9c90e1f58a 32442 text optional blogc-make_0.20.1.21-f35e-1~12.3mantic_amd64.deb
+ a4ccaec415feea9d4bcf475e14c279a0 17688 text optional blogc-runserver_0.20.1.21-f35e-1~12.3mantic_amd64.deb
+ 440be8b60661f63531dc155634008725 7167 text optional blogc_0.20.1.21-f35e-1~12.3mantic_amd64.buildinfo
+ 4a931bafc7089c610dfbb66aad4bd52c 42444 text optional blogc_0.20.1.21-f35e-1~12.3mantic_amd64.deb

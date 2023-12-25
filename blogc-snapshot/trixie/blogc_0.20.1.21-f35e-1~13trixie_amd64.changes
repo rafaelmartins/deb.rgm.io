@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Mon, 25 Dec 2023 06:34:13 +0000
+Source: blogc
+Binary: blogc blogc-git-receiver blogc-make blogc-runserver
+Architecture: amd64
+Version: 0.20.1.21-f35e-1~13trixie
+Distribution: trixie
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ blogc      - Blog compiler
+ blogc-git-receiver - Blog compiler
+ blogc-make - Blog compiler
+ blogc-runserver - Blog compiler
+Changes:
+ blogc (0.20.1.21-f35e-1~13trixie) trixie; urgency=medium
+ .
+   * Automated build for trixie
+Checksums-Sha1:
+ 56de515055bd418d546848cc7bf28191d3856097 19492 blogc-git-receiver_0.20.1.21-f35e-1~13trixie_amd64.deb
+ f8860c41e291978f8a80d572cc9890486348f82b 30552 blogc-make_0.20.1.21-f35e-1~13trixie_amd64.deb
+ b6b7bfe64b411d54632cd92306bc2e16ef492ba9 16032 blogc-runserver_0.20.1.21-f35e-1~13trixie_amd64.deb
+ 109a393877d69b5f1d1ff79425bd064bc76cb860 6472 blogc_0.20.1.21-f35e-1~13trixie_amd64.buildinfo
+ e0b85ece8b67975161c5df81f79d52b26b6aaed4 40688 blogc_0.20.1.21-f35e-1~13trixie_amd64.deb
+Checksums-Sha256:
+ 487186ef6ead0e69b8fe5a174dd4dcf5837d4795fc5f843cbea136579437e695 19492 blogc-git-receiver_0.20.1.21-f35e-1~13trixie_amd64.deb
+ 74eb42d2a636aa9b4adb615e9182cbade8663655d4073c5636cffe72e2fb46f1 30552 blogc-make_0.20.1.21-f35e-1~13trixie_amd64.deb
+ 73e06bc55d347f28a5c5b7fd42ef5309151e89f0b5c6dbffd64c83c9119ee8ac 16032 blogc-runserver_0.20.1.21-f35e-1~13trixie_amd64.deb
+ ea7e1495b08d00fdceff2af94b0ea9f34729134129f515e57314747d437b6c80 6472 blogc_0.20.1.21-f35e-1~13trixie_amd64.buildinfo
+ 2ddb962bf3362dc9dd1cb4637e8fcd3f034e4f817ce89bae5e06132adf83b171 40688 blogc_0.20.1.21-f35e-1~13trixie_amd64.deb
+Files:
+ 1d91ab0f4acf57f34407362f28bd6e7c 19492 text optional blogc-git-receiver_0.20.1.21-f35e-1~13trixie_amd64.deb
+ 4a19c49a8455e0c972de2f16821a2a03 30552 text optional blogc-make_0.20.1.21-f35e-1~13trixie_amd64.deb
+ f78de659d4d7782560ee1fc6ed661068 16032 text optional blogc-runserver_0.20.1.21-f35e-1~13trixie_amd64.deb
+ c3ba533d43ad4c5242823fb721efbf32 6472 text optional blogc_0.20.1.21-f35e-1~13trixie_amd64.buildinfo
+ d0e1c315ff826098c4e548412b816d20 40688 text optional blogc_0.20.1.21-f35e-1~13trixie_amd64.deb

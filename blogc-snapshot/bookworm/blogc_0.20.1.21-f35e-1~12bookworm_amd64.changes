@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Mon, 25 Dec 2023 06:34:13 +0000
+Source: blogc
+Binary: blogc blogc-git-receiver blogc-make blogc-runserver
+Architecture: amd64
+Version: 0.20.1.21-f35e-1~12bookworm
+Distribution: bookworm
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ blogc      - Blog compiler
+ blogc-git-receiver - Blog compiler
+ blogc-make - Blog compiler
+ blogc-runserver - Blog compiler
+Changes:
+ blogc (0.20.1.21-f35e-1~12bookworm) bookworm; urgency=medium
+ .
+   * Automated build for bookworm
+Checksums-Sha1:
+ cef91d746cb8d69a36cd655ce13a9c9880704e53 20124 blogc-git-receiver_0.20.1.21-f35e-1~12bookworm_amd64.deb
+ 082482ac6e4cef190ec014a60548063cf9a0489b 31208 blogc-make_0.20.1.21-f35e-1~12bookworm_amd64.deb
+ 16c973a4ec250544ddc844e60b10610160ba2cc2 16000 blogc-runserver_0.20.1.21-f35e-1~12bookworm_amd64.deb
+ f19b78e0ab514efcd31e7ff3c8f10030ad5bd74c 6614 blogc_0.20.1.21-f35e-1~12bookworm_amd64.buildinfo
+ 0177dda88e03852f592c112055e23e26d732514f 42840 blogc_0.20.1.21-f35e-1~12bookworm_amd64.deb
+Checksums-Sha256:
+ b1d5ba15509c157341d8a8429bd94380b9df8d671a86e27ac741e3c332883b9d 20124 blogc-git-receiver_0.20.1.21-f35e-1~12bookworm_amd64.deb
+ 8447206449e419bde9695513130bb1b7aea90a5d60617be97145a4d404c4148b 31208 blogc-make_0.20.1.21-f35e-1~12bookworm_amd64.deb
+ 7064c424116f6ced683accb38f54db191dcda7b0a3c9688b45a57187a6726d48 16000 blogc-runserver_0.20.1.21-f35e-1~12bookworm_amd64.deb
+ 9415522eaf2576dd808bfb2147193bbb7e5c8c217eb6a9cfa217ca8a8bbce08d 6614 blogc_0.20.1.21-f35e-1~12bookworm_amd64.buildinfo
+ 2e4f30d206dce885566e4ae1a65488409c659ed7d2d015f55e290df538a27fed 42840 blogc_0.20.1.21-f35e-1~12bookworm_amd64.deb
+Files:
+ 0c34a7bfd42c7d2fefb545d3a3a41390 20124 text optional blogc-git-receiver_0.20.1.21-f35e-1~12bookworm_amd64.deb
+ f3b23e1fd41422f03dbc11e1fc48e6c9 31208 text optional blogc-make_0.20.1.21-f35e-1~12bookworm_amd64.deb
+ 3121043b3560b688d9c78258780135a3 16000 text optional blogc-runserver_0.20.1.21-f35e-1~12bookworm_amd64.deb
+ 80b639eb7385f6c29df1e58fc28a977b 6614 text optional blogc_0.20.1.21-f35e-1~12bookworm_amd64.buildinfo
+ ea1be4b0db27f8186c054f199280c470 42840 text optional blogc_0.20.1.21-f35e-1~12bookworm_amd64.deb

@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Mon, 25 Dec 2023 06:34:15 +0000
+Source: blogc
+Binary: blogc blogc-git-receiver blogc-make blogc-runserver
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.20.1-1~12.3mantic
+Distribution: mantic
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ blogc      - Blog compiler
+ blogc-git-receiver - Blog compiler
+ blogc-make - Blog compiler
+ blogc-runserver - Blog compiler
+Changes:
+ blogc (0.20.1-1~12.3mantic) mantic; urgency=medium
+ .
+   * Automated build for mantic
+Checksums-Sha1:
+ 64b121aa08e2d93e4d71ad3cb6625c6cb8016706 20574 blogc-git-receiver_0.20.1-1~12.3mantic_amd64.deb
+ 287fddbc8dccf7003fe95dfec2eaaed23d7fe165 32308 blogc-make_0.20.1-1~12.3mantic_amd64.deb
+ 9a45421015a5422496f8452b7fe9752ad71e86e0 17796 blogc-runserver_0.20.1-1~12.3mantic_amd64.deb
+ 7c2ae7ff08825ae09a68014b191bdd5e75c2f40b 7055 blogc_0.20.1-1~12.3mantic_amd64.buildinfo
+ 66e12c99126699a2ee5e137ff4d8f3d4f77099ab 41896 blogc_0.20.1-1~12.3mantic_amd64.deb
+Checksums-Sha256:
+ 1c302c7b6c1742b2c6772e7183b363767ec29e73eb42f08c136f8c364bbd4308 20574 blogc-git-receiver_0.20.1-1~12.3mantic_amd64.deb
+ be144690971388e7f433e8bcd48a6fce6cb504833433d1196c8cbfe2b2633058 32308 blogc-make_0.20.1-1~12.3mantic_amd64.deb
+ f045e330b6ed47df999bf92cd855a10134a592d5149d7deec0dba0422347da63 17796 blogc-runserver_0.20.1-1~12.3mantic_amd64.deb
+ a71d750ab8aa736dbc7fe49a2103e6e5f560ace37c26056d512cc82b0ac3155c 7055 blogc_0.20.1-1~12.3mantic_amd64.buildinfo
+ 68d1e659db78db574134eacf6b1308e055ab86b915b9204bbd79cf38bb1ca33c 41896 blogc_0.20.1-1~12.3mantic_amd64.deb
+Files:
+ 15e58ec8eb37ee56e3caa94f683e03af 20574 text optional blogc-git-receiver_0.20.1-1~12.3mantic_amd64.deb
+ e25f1559c03cfa4ae2dfef341946a770 32308 text optional blogc-make_0.20.1-1~12.3mantic_amd64.deb
+ bf09dab06d443cb4f7ac010750262dd4 17796 text optional blogc-runserver_0.20.1-1~12.3mantic_amd64.deb
+ af89d4debfdef89a4d47d8a87b4734c1 7055 text optional blogc_0.20.1-1~12.3mantic_amd64.buildinfo
+ 12d0d81f136c3af615c477406b8ee208 41896 text optional blogc_0.20.1-1~12.3mantic_amd64.deb

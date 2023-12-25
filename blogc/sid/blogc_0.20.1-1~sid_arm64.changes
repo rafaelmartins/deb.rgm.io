@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Mon, 25 Dec 2023 06:34:15 +0000
+Source: blogc
+Binary: blogc blogc-git-receiver blogc-make blogc-runserver
+Architecture: arm64
+Version: 0.20.1-1~sid
+Distribution: sid
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ blogc      - Blog compiler
+ blogc-git-receiver - Blog compiler
+ blogc-make - Blog compiler
+ blogc-runserver - Blog compiler
+Changes:
+ blogc (0.20.1-1~sid) sid; urgency=medium
+ .
+   * Automated build for sid
+Checksums-Sha1:
+ 03b96e3406fe6fdc19d66630f34ce68108a84407 18996 blogc-git-receiver_0.20.1-1~sid_arm64.deb
+ 1c09e771dcbaf294e4440dba796e997b337d8866 29592 blogc-make_0.20.1-1~sid_arm64.deb
+ 5da1d26ed04e428709096728b5a359f5c964fec6 15464 blogc-runserver_0.20.1-1~sid_arm64.deb
+ 2d6da0d4aec9e58a52166100f059dc797cd9624a 6256 blogc_0.20.1-1~sid_arm64.buildinfo
+ d50c3fe75a9fcc40b8af90f40a62605115ad839a 37980 blogc_0.20.1-1~sid_arm64.deb
+Checksums-Sha256:
+ bbd62e343578f21aa71e433a2d152bb3f892db5130207ede1001916d3766f078 18996 blogc-git-receiver_0.20.1-1~sid_arm64.deb
+ 260ccfbad53e0c0ac9317f00b5b6f8deb496d48ca4aa6d7e6a27e700d2fc2039 29592 blogc-make_0.20.1-1~sid_arm64.deb
+ 11f50727d95c3a262cb89cbf1a235188846e769d5731e77d9a3ebb05c4e25ff0 15464 blogc-runserver_0.20.1-1~sid_arm64.deb
+ 81df15d0d2e216c55e29ca958b30b813b903ef8464e296ee77564715d02a0834 6256 blogc_0.20.1-1~sid_arm64.buildinfo
+ 0e98b84aac38a217b88ed1408d239da5857935af33edd1e24026fe8ca3a38fe5 37980 blogc_0.20.1-1~sid_arm64.deb
+Files:
+ f6d0ff735eb8b486a63e33bb2c072bb6 18996 text optional blogc-git-receiver_0.20.1-1~sid_arm64.deb
+ 21a3bc4dd6f5eecc3aadfb666f72bbb4 29592 text optional blogc-make_0.20.1-1~sid_arm64.deb
+ 409dff3b30d1d80ea3f3af466511da81 15464 text optional blogc-runserver_0.20.1-1~sid_arm64.deb
+ c31fb0c02cc1f965d70fdb9290fc95b9 6256 text optional blogc_0.20.1-1~sid_arm64.buildinfo
+ 1aba1f5eb9d3c4875fda4ad16c5c0169 37980 text optional blogc_0.20.1-1~sid_arm64.deb

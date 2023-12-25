@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Mon, 25 Dec 2023 06:34:13 +0000
+Source: blogc
+Binary: blogc blogc-git-receiver blogc-make blogc-runserver
+Architecture: arm64
+Version: 0.20.1-1~12bookworm
+Distribution: bookworm
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ blogc      - Blog compiler
+ blogc-git-receiver - Blog compiler
+ blogc-make - Blog compiler
+ blogc-runserver - Blog compiler
+Changes:
+ blogc (0.20.1-1~12bookworm) bookworm; urgency=medium
+ .
+   * Automated build for bookworm
+Checksums-Sha1:
+ 25b7c47a1a0192dcef958e68e8e0c4f82aeeb36e 19060 blogc-git-receiver_0.20.1-1~12bookworm_arm64.deb
+ 61603a7087cd0296b269aacf3c54d87bd6c70534 29636 blogc-make_0.20.1-1~12bookworm_arm64.deb
+ 0aa553d73b2604077e88293248d6b868bf40c9fa 15288 blogc-runserver_0.20.1-1~12bookworm_arm64.deb
+ 63dbc9348283940bbb7d28b17434f913c21e4fab 6501 blogc_0.20.1-1~12bookworm_arm64.buildinfo
+ e0795671e613410a175aa3147e6225bf06660966 38824 blogc_0.20.1-1~12bookworm_arm64.deb
+Checksums-Sha256:
+ 353a8aee6ab0be9fe372260e420cf9a3f8e66f76e715d42d84a76ee2d2329e61 19060 blogc-git-receiver_0.20.1-1~12bookworm_arm64.deb
+ 76992ef1b4c02458e14bb7f889e07735ed5dee967e00eb0e0aaee89ffb3ec90f 29636 blogc-make_0.20.1-1~12bookworm_arm64.deb
+ 231ea8e2068ffcc62de75af04a651db66925136cae7ee8d119e288bb2d0a679f 15288 blogc-runserver_0.20.1-1~12bookworm_arm64.deb
+ e4575bd3b5b91df75362c1bf26257dec65d4adcd025581f5c319662076fba505 6501 blogc_0.20.1-1~12bookworm_arm64.buildinfo
+ 94a14619474762de27d2c177abe5f8fdbe582512be98028049607d3c7f566bd4 38824 blogc_0.20.1-1~12bookworm_arm64.deb
+Files:
+ 8cf462d2ef4e3fbbd00a989c659a66a2 19060 text optional blogc-git-receiver_0.20.1-1~12bookworm_arm64.deb
+ 37c6cec8d2e35091987d6e8dcc0f70fd 29636 text optional blogc-make_0.20.1-1~12bookworm_arm64.deb
+ d1b2de3aa5fe9f50c6fa20f38459ce55 15288 text optional blogc-runserver_0.20.1-1~12bookworm_arm64.deb
+ 0372583dbb56210e1a9efe995771142b 6501 text optional blogc_0.20.1-1~12bookworm_arm64.buildinfo
+ 4d7c3769045c9f5f6d9b505c3765adfd 38824 text optional blogc_0.20.1-1~12bookworm_arm64.deb

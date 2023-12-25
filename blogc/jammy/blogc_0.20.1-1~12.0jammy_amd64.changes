@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Mon, 25 Dec 2023 06:34:14 +0000
+Source: blogc
+Binary: blogc blogc-git-receiver blogc-make blogc-runserver
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.20.1-1~12.0jammy
+Distribution: jammy
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ blogc      - Blog compiler
+ blogc-git-receiver - Blog compiler
+ blogc-make - Blog compiler
+ blogc-runserver - Blog compiler
+Changes:
+ blogc (0.20.1-1~12.0jammy) jammy; urgency=medium
+ .
+   * Automated build for jammy
+Checksums-Sha1:
+ befa87c4661ed162195c56da90809831238a374b 21760 blogc-git-receiver_0.20.1-1~12.0jammy_amd64.deb
+ c2630b0514ee45c58304f4451c27c5caf005818f 33598 blogc-make_0.20.1-1~12.0jammy_amd64.deb
+ 39b7c6e5cba5cf23d1cced0d4f6cd7193c98e4eb 17658 blogc-runserver_0.20.1-1~12.0jammy_amd64.deb
+ 957b2727a72d1fdc9c82ce375df3ca2862429e7e 7502 blogc_0.20.1-1~12.0jammy_amd64.buildinfo
+ 7adf59f1180baa51ea57bc7c8f70976159128f96 43140 blogc_0.20.1-1~12.0jammy_amd64.deb
+Checksums-Sha256:
+ dc1d8069215726a0d5f8e3cab3d0cb22501ef3806d0c5de3c9865e02c9d8eaa2 21760 blogc-git-receiver_0.20.1-1~12.0jammy_amd64.deb
+ 8660a0fda83a6d5dbb51a5e0464ac2abca1f01ea6189d475ebc53bceb70da991 33598 blogc-make_0.20.1-1~12.0jammy_amd64.deb
+ 1d8680544d75f1436ac8f11ea77aab4b394af24be1de6431267fcf497a00678d 17658 blogc-runserver_0.20.1-1~12.0jammy_amd64.deb
+ 376a15fe6d745518d7ec121b3b8c8f119866d4bd2c1d4f6bad7ce0fec5fb2e9b 7502 blogc_0.20.1-1~12.0jammy_amd64.buildinfo
+ 671000780c41a223e2e461c1c760748f753202c19ce7f4bf38bae78e6f9faf39 43140 blogc_0.20.1-1~12.0jammy_amd64.deb
+Files:
+ c6ddbaf14fb39802fdea493ddc5c90b3 21760 text optional blogc-git-receiver_0.20.1-1~12.0jammy_amd64.deb
+ 9dd0eddda903d282aa6a0dba839005b2 33598 text optional blogc-make_0.20.1-1~12.0jammy_amd64.deb
+ 486f5f8d149df2d40080bdbf88b1cf4e 17658 text optional blogc-runserver_0.20.1-1~12.0jammy_amd64.deb
+ 11b1a043a789ca8ee2a53cfb8e7f54c6 7502 text optional blogc_0.20.1-1~12.0jammy_amd64.buildinfo
+ a802d0c9340de9817ea04f68fc7dd52c 43140 text optional blogc_0.20.1-1~12.0jammy_amd64.deb

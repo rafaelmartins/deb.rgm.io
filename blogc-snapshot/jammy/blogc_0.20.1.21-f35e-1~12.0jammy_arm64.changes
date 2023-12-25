@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Mon, 25 Dec 2023 06:34:12 +0000
+Source: blogc
+Binary: blogc blogc-git-receiver blogc-make blogc-runserver
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 0.20.1.21-f35e-1~12.0jammy
+Distribution: jammy
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ blogc      - Blog compiler
+ blogc-git-receiver - Blog compiler
+ blogc-make - Blog compiler
+ blogc-runserver - Blog compiler
+Changes:
+ blogc (0.20.1.21-f35e-1~12.0jammy) jammy; urgency=medium
+ .
+   * Automated build for jammy
+Checksums-Sha1:
+ 722926512becf3c6dbf8afc89d086862bc4b1aa8 21458 blogc-git-receiver_0.20.1.21-f35e-1~12.0jammy_arm64.deb
+ 0f0b00ce5cb8367bf990cb4f6e0644b347c7144f 33370 blogc-make_0.20.1.21-f35e-1~12.0jammy_arm64.deb
+ 6ab9c30a2096c3b895458ed7f309ff754c27b7f6 17086 blogc-runserver_0.20.1.21-f35e-1~12.0jammy_arm64.deb
+ db0d47e05fe8d9119c6927d01ee0e8e4009abe19 7613 blogc_0.20.1.21-f35e-1~12.0jammy_arm64.buildinfo
+ 9a5abc99a2f4978c39bed512dd6dfac81668c905 42758 blogc_0.20.1.21-f35e-1~12.0jammy_arm64.deb
+Checksums-Sha256:
+ 7d4fc99b00fe5a8bd08675e73e925b98d491d1e4e1ec89c7574f87407fb11b38 21458 blogc-git-receiver_0.20.1.21-f35e-1~12.0jammy_arm64.deb
+ f6afe5c9a8c69e33499d38e1b7ec25f3c838169e453186fe14f597d1c2d392c4 33370 blogc-make_0.20.1.21-f35e-1~12.0jammy_arm64.deb
+ 71e68c8532d17ac6d21b84bb627c8bb0d9419252a2d9d83cf6a3aca8a0a2d71d 17086 blogc-runserver_0.20.1.21-f35e-1~12.0jammy_arm64.deb
+ 436c35a69b99acc1c675b1a266e01d335117e7dd5cc870098bdfe6e6719b6ad7 7613 blogc_0.20.1.21-f35e-1~12.0jammy_arm64.buildinfo
+ ca6345db6ffcfd0632299cd205b568c660be324bf99bce4adf98df74d1cd275b 42758 blogc_0.20.1.21-f35e-1~12.0jammy_arm64.deb
+Files:
+ 16f4eafd2757291708dc5386430d81b9 21458 text optional blogc-git-receiver_0.20.1.21-f35e-1~12.0jammy_arm64.deb
+ 4743196026a98ce1322f379e23afcb79 33370 text optional blogc-make_0.20.1.21-f35e-1~12.0jammy_arm64.deb
+ ac6bc1c9a2ee38e3e835bf0cf6b29a2a 17086 text optional blogc-runserver_0.20.1.21-f35e-1~12.0jammy_arm64.deb
+ 836ce13ba97fcc483f97c189c00a2d66 7613 text optional blogc_0.20.1.21-f35e-1~12.0jammy_arm64.buildinfo
+ 9807593438b3c6fdaef08007cf231329 42758 text optional blogc_0.20.1.21-f35e-1~12.0jammy_arm64.deb
