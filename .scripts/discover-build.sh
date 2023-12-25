@@ -29,7 +29,7 @@ for repo in $("${SCRIPT_DIR}/metadata-repos.sh"); do
         fi
 
         for arch in amd64 arm64 source; do
-            if [[ "${arch}" != arm64 ]] || [[ "${FORCE_ARM64_SNAPSHOTS:-}" == true ]]; then
+            if [[ "${arch}" != arm64 ]] || [[ "${FORCE_ARM64:-}" == true ]]; then
                 # release repository
                 if [[ "${chl_version}" = "${orig_version}" ]]; then
                     deb_version_rev="$("${SCRIPT_DIR}/metadata-deb-version-rev.sh" "${DEB_DIR}" "${repo}" "${codename}" "${arch}")"

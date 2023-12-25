@@ -10,9 +10,9 @@ on:
 
   workflow_dispatch:
     inputs:
-      force-arm64-snapshots:
+      force-arm64:
         type: boolean
-        description: Force build ARM64 packages for snapshots
+        description: Build ARM64 packages
 
 permissions: read-all
 
@@ -24,7 +24,7 @@ defaults:
     shell: bash
 
 env:
-  FORCE_ARM64_SNAPSHOTS: ${{ github.event_name == 'schedule' || inputs.force-arm64-snapshots }}
+  FORCE_ARM64: ${{ github.event_name == 'schedule' || inputs.force-arm64 }}
 
 jobs:
   metadata-orig:
