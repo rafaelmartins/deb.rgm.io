@@ -1,0 +1,355 @@
+name: Update deb.rgm.io
+
+on:
+  push:
+    branches:
+      - main
+
+  schedule:
+    - cron: '0 10 * * *'
+
+  workflow_dispatch:
+    inputs:
+      force-arm64-snapshots:
+        type: boolean
+        description: Force build ARM64 packages for snapshots
+
+permissions: read-all
+
+concurrency:
+  group: ${{ github.workflow }}
+
+defaults:
+  run:
+    shell: bash
+
+env:
+  FORCE_ARM64_SNAPSHOTS: ${{ github.event_name == 'schedule' || inputs.force-arm64-snapshots }}
+
+jobs:
+  metadata-orig:
+    runs-on: ubuntu-22.04
+
+    outputs:
+      orig: ${{ steps.matrix.outputs.orig }}
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          path: main
+
+      - name: Check out orig
+        uses: actions/checkout@v4
+        with:
+          ref: orig
+          path: orig
+
+      - name: Generate orig matrix
+        id: matrix
+        run: |
+          orig="$(./main/.scripts/discover-orig.sh ./orig)"
+          echo "orig=${orig}" >> $GITHUB_OUTPUT
+
+  orig:
+    runs-on: ubuntu-22.04
+    continue-on-error: true
+    needs:
+      - metadata-orig
+
+    strategy:
+      matrix:
+        orig: ${{ fromJSON(needs.metadata-orig.outputs.orig) }}
+
+    steps:
+      - name: Parse metadata
+        if: ${{ matrix.orig != 'placeholder' }}
+        id: metadata
+        run: |
+          echo "repo=$(echo ${{ matrix.orig }} | cut -d' ' -f1)" >> $GITHUB_OUTPUT
+          echo "repodir=$(echo ${{ matrix.orig }} | cut -d' ' -f1 | sed -e 's/-snapshot$//')" >> $GITHUB_OUTPUT
+          echo "gh_fullrepo=$(echo ${{ matrix.orig }} | cut -d' ' -f2)" >> $GITHUB_OUTPUT
+          echo "gh_repo=$(echo ${{ matrix.orig }} | cut -d' ' -f2 | cut -d/ -f2)" >> $GITHUB_OUTPUT
+          echo "ref=$(echo ${{ matrix.orig }} | cut -d' ' -f3)" >> $GITHUB_OUTPUT
+
+      - name: Check out code
+        if: ${{ matrix.orig != 'placeholder' }}
+        uses: actions/checkout@v4
+        with:
+          path: main
+
+      - name: Check out orig
+        if: ${{ matrix.orig != 'placeholder' }}
+        uses: actions/checkout@v4
+        with:
+          ref: orig
+          path: orig
+
+      - name: Check out source repository
+        if: ${{ matrix.orig != 'placeholder' }}
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ steps.metadata.outputs.gh_fullrepo }}
+          ref: ${{ steps.metadata.outputs.ref }}
+          path: ${{ steps.metadata.outputs.gh_repo }}
+          fetch-depth: 0
+
+      - name: Generate orig
+        if: ${{ matrix.orig != 'placeholder' }}
+        working-directory: ${{ steps.metadata.outputs.gh_repo }}
+        run: |
+          mkdir -p ../output
+          "../main/${{ steps.metadata.outputs.repodir }}/orig.sh" ../output
+
+      - name: Upload source artifacts
+        if: ${{ matrix.orig != 'placeholder' }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: orig--${{ steps.metadata.outputs.repo }}
+          path: output
+
+  commit-orig:
+    runs-on: ubuntu-22.04
+    needs:
+      - orig
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          path: main
+
+      - name: Check out orig
+        uses: actions/checkout@v4
+        with:
+          ref: orig
+          path: orig
+
+      - name: Download source artifacts
+        uses: actions/download-artifact@v3
+        with:
+          path: new
+
+      - name: Commit orig updates
+        run: ./main/.scripts/commit-orig.sh ./orig ./new
+
+  metadata-build:
+    runs-on: ubuntu-22.04
+    needs:
+      - commit-orig
+
+    outputs:
+      bdeps: ${{ steps.matrix.outputs.bdeps }}
+      build: ${{ steps.matrix.outputs.build }}
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          path: main
+
+      - name: Check out orig
+        uses: actions/checkout@v4
+        with:
+          ref: orig
+          path: orig
+
+      - name: Check out deb
+        uses: actions/checkout@v4
+        with:
+          ref: deb
+          path: deb
+
+      - name: Generate build matrix and changelogs
+        id: matrix
+        run: ./main/.scripts/discover-build.sh ./orig ./deb ./changelogs
+
+      - name: Upload changelog artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: changelogs
+          path: changelogs
+
+  build-deps:
+    runs-on: ubuntu-22.04
+    continue-on-error: true
+    needs:
+      - metadata-build
+
+    strategy:
+      matrix:
+        build: ${{ fromJSON(needs.metadata-build.outputs.bdeps) }}
+
+    steps:
+      - name: Parse metadata
+        if: ${{ matrix.build != 'placeholder' }}
+        id: metadata
+        run: echo "arch=$(echo ${{ matrix.build }} | cut -d' ' -f2)" >> $GITHUB_OUTPUT
+
+      - name: Check out code
+        if: ${{ matrix.build != 'placeholder' }}
+        uses: actions/checkout@v4
+        with:
+          path: main
+
+      - name: Setup QEMU
+        if: ${{ matrix.build != 'placeholder' && steps.metadata.outputs.arch == 'arm64' }}
+        uses: docker/setup-qemu-action@v3
+        with:
+          platforms: arm64
+
+      - name: Run mk-build-deps
+        if: ${{ matrix.build != 'placeholder' }}
+        run: ./main/.scripts/build-deps.sh ./output ${{ matrix.build }}
+
+      - name: Upload dependency artifacts
+        if: ${{ matrix.build != 'placeholder' }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: bdeps--${{ matrix.build }}
+          path: output
+
+  build:
+    runs-on: ubuntu-22.04
+    continue-on-error: true
+    needs:
+      - metadata-build
+      - build-deps
+
+    strategy:
+      matrix:
+        build: ${{ fromJSON(needs.metadata-build.outputs.build) }}
+
+    steps:
+      - name: Parse metadata
+        if: ${{ matrix.build != 'placeholder' }}
+        id: metadata
+        run: |
+          echo "repodir=$(echo ${{ matrix.build }} | cut -d' ' -f1 | sed -e 's/-snapshot$//')" >> $GITHUB_OUTPUT
+          echo "arch=$(echo ${{ matrix.build }} | cut -d' ' -f3)" >> $GITHUB_OUTPUT
+
+      - name: Check out code
+        if: ${{ matrix.build != 'placeholder' }}
+        uses: actions/checkout@v4
+        with:
+          path: main
+
+      - name: Check out orig
+        if: ${{ matrix.build != 'placeholder' }}
+        uses: actions/checkout@v4
+        with:
+          ref: orig
+          path: orig
+
+      - name: Download dependency artifacts
+        if: ${{ matrix.build != 'placeholder' && steps.metadata.outputs.arch != 'source' }}
+        uses: actions/download-artifact@v3
+        with:
+          name: bdeps--${{ steps.metadata.outputs.repodir }} ${{ steps.metadata.outputs.arch }}
+          path: new
+
+      - name: Download changelog artifacts
+        if: ${{ matrix.build != 'placeholder' }}
+        uses: actions/download-artifact@v3
+        with:
+          name: changelogs
+          path: changelogs
+
+      - name: Setup QEMU
+        if: ${{ matrix.build != 'placeholder' && steps.metadata.outputs.arch == 'arm64' }}
+        uses: docker/setup-qemu-action@v3
+        with:
+          platforms: arm64
+
+      - name: Build
+        if: ${{ matrix.build != 'placeholder' }}
+        run: ./main/.scripts/build.sh ./orig ./new ./changelogs ./output ${{ matrix.build }}
+
+      - name: Upload build artifacts
+        if: ${{ matrix.build != 'placeholder' }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: build--${{ matrix.build }}
+          path: output
+
+  commit-build:
+    runs-on: ubuntu-22.04
+    needs:
+      - build
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          path: main
+
+      - name: Check out deb
+        uses: actions/checkout@v4
+        with:
+          ref: deb
+          path: deb
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          path: new
+
+      - name: Commit build updates
+        run: ./main/.scripts/commit-build.sh ./deb ./new
+
+  create-repos:
+    runs-on: ubuntu-22.04
+    needs:
+      - commit-build
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          path: main
+
+      - name: Check out deb
+        uses: actions/checkout@v4
+        with:
+          ref: deb
+          path: deb
+
+      - name: Import signing key
+        run: echo -e "${{ secrets.GPG_SIGNING_KEY }}" | gpg --import --batch --no-tty
+
+      - name: Create repositories
+        env:
+          GPG_SIGNING_KEY_ID: ${{ secrets.GPG_SIGNING_KEY_ID }}
+        run: ./main/.scripts/create-repos.sh ./output ./deb
+
+      - name: Create index
+        run: ./main/.scripts/create-index.sh ./output ./deb
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./output
+
+  deploy:
+    runs-on: ubuntu-22.04
+    needs:
+      - create-repos
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
