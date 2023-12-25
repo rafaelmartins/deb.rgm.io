@@ -31,6 +31,11 @@ function header() {
     </p>
 
     <p>
+        We provide packages for <code>amd64</code> and <code>arm64</code>. Source packages are also available.
+        Packages for <code>arm64</code> are not built immediately and may take up to one day to be published.
+    </p>
+
+    <p>
         To install, pick a repository and a distribution, click on the link and download the <code>.sources</code>
         file to <code>/etc/apt/sources.list.d</code>.
     </p>
