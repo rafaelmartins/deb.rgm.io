@@ -103,7 +103,7 @@ jobs:
 
       - name: Upload source artifacts
         if: ${{ matrix.orig != 'placeholder' }}
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: orig--${{ steps.metadata.outputs.repo }}
           path: output
@@ -129,7 +129,7 @@ jobs:
           path: orig
 
       - name: Download source artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           path: new
 
@@ -168,7 +168,7 @@ jobs:
         run: ./main/.scripts/discover-build.sh ./orig ./deb ./changelogs
 
       - name: Upload changelog artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: changelogs
           path: changelogs
@@ -207,7 +207,7 @@ jobs:
 
       - name: Upload dependency artifacts
         if: ${{ matrix.build != 'placeholder' }}
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: bdeps--${{ matrix.build }}
           path: output
@@ -246,14 +246,14 @@ jobs:
 
       - name: Download dependency artifacts
         if: ${{ matrix.build != 'placeholder' && steps.metadata.outputs.arch != 'source' }}
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: bdeps--${{ steps.metadata.outputs.repodir }} ${{ steps.metadata.outputs.arch }}
           path: new
 
       - name: Download changelog artifacts
         if: ${{ matrix.build != 'placeholder' }}
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: changelogs
           path: changelogs
@@ -270,7 +270,7 @@ jobs:
 
       - name: Upload build artifacts
         if: ${{ matrix.build != 'placeholder' }}
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: build--${{ matrix.build }}
           path: output
@@ -296,7 +296,7 @@ jobs:
           path: deb
 
       - name: Download build artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           path: new
 
@@ -332,7 +332,7 @@ jobs:
         run: ./main/.scripts/create-index.sh ./output ./deb
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./output
 
@@ -352,4 +352,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
