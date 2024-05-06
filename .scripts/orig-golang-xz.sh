@@ -9,9 +9,15 @@ OUTPUT_DIR="$(realpath "${1}")"
 NAME="${2}"
 VERSION="${3}"
 
+rm -rf vendor
+go mod vendor -v
+git add vendor
+
+tmp=$(git stash create)
+
 git archive \
     --format=tar \
     --prefix="${NAME}-${VERSION}/" \
-    HEAD \
+    "${tmp}" \
 | xz \
 > "${OUTPUT_DIR}/${NAME}_${VERSION}.orig.tar.xz"
