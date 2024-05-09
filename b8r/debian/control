@@ -13,6 +13,7 @@ Homepage: https://github.com/rafaelmartins/b8r
 X-GitHub-Repo: rafaelmartins/b8r
 Rules-Requires-Root: no
 XS-Go-Import-Path: github.com/rafaelmartins/b8r
+X-Skip-Build-For: jammy
 
 Package: b8r
 Architecture: any
