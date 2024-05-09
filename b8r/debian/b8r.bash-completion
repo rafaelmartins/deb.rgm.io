@@ -1,0 +1,1 @@
+complete -C b8r -o default b8r
