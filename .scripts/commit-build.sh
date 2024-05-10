@@ -43,7 +43,7 @@ for drepo in *; do
                 break
             fi
         done < "${ROOT_DIR}/DISTROS"
-        if [[ -z "${found}" ]]; then
+        if [[ -z "${found}" ]] || ! "${SCRIPT_DIR}/metadata-build-for-codename.sh" "${drepo}" "${cname}"; then
             rm -rvf "${cname}"
         fi
     done
@@ -63,6 +63,10 @@ if ls "${NEW_DIR}"/build--* &> /dev/null; then
         distro="$(echo "${build_id}" | cut -d' ' -f2)"
         arch="$(echo "${build_id}" | cut -d' ' -f3)"
         codename="$(echo "${distro}" | cut -d_ -f2)"
+
+        if ! "${SCRIPT_DIR}/metadata-build-for-codename.sh" "${repo_name}" "${codename}"; then
+            continue
+        fi
 
         if [[ "${arch}" = source ]]; then
             rm -f "${DEB_DIR}/${repo_name}/${codename}/"*{.debian.tar.*,.dsc}
