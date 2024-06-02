@@ -69,7 +69,7 @@ if ls "${NEW_DIR}"/build--* &> /dev/null; then
         fi
 
         if [[ "${arch}" = source ]]; then
-            rm -f "${DEB_DIR}/${repo_name}/${codename}/"*{.debian.tar.*,.dsc}
+            rm -f "${DEB_DIR}/${repo_name}/${codename}/"*{.orig.tar.*,.debian.tar.*,.dsc}
         else
             rm -f "${DEB_DIR}/${repo_name}/${codename}/"*"_${arch}."*
         fi
