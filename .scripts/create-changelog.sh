@@ -45,7 +45,7 @@ if [[ -f "${debianfile}" ]]; then
 fi
 
 cp \
-    "${ROOT_DIR}/${REPO_NAME%%-snapshot}/debian/changelog" \
+    "$("${SCRIPT_DIR}/metadata-debian-file.sh" "${REPO_NAME}" changelog)" \
     "${OUTPUT_DIR}/${REPO_NAME}/${CODENAME}/"
 
 dch \

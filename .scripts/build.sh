@@ -49,20 +49,15 @@ builddir="$(
     | head -n 1
 )"
 
-pushd "${builddir}" > /dev/null
-
-cp \
-    --recursive \
-    "${ROOT_DIR}/${REPO_NAME%%-snapshot}/debian" \
-    .
+"${SCRIPT_DIR}/copy-debian-dir.sh" \
+    "${REPO_NAME}" \
+    "${builddir}"
 
 cp \
     "${CHANGELOG_DIR}/${REPO_NAME}/${CODENAME}/changelog" \
-    debian/changelog \
+    "${builddir}/debian/changelog" \
 &> /dev/null \
 || exit 0
-
-popd > /dev/null
 
 mkdir -p "${OUTPUT_DIR}"
 

@@ -12,6 +12,8 @@ ARCH="${3}"
 tmpdir="$(mktemp -d)"
 trap 'rm -rf -- "${tmpdir}"' EXIT
 
+control="$("${SCRIPT_DIR}/metadata-debian-file.sh" "${REPO_NAME}" control)"
+
 docker run \
     --platform="linux/${ARCH}" \
     --pull=always \
@@ -27,7 +29,7 @@ docker run \
             trap 'chown -R $(id -u):$(id -g) /builddeps' EXIT; \
             apt update \
                 && apt install -y --no-install-recommends devscripts equivs \
-                && mk-build-deps /src/debian/control; \
+                && mk-build-deps /src/debian/$(basename "${control}") \
         "
 
 mkdir -p "${OUTPUT_DIR}"

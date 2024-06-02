@@ -8,10 +8,7 @@ source "${SCRIPT_DIR}/utils.sh"
 
 REPO_NAME="${1}"
 
-control="${ROOT_DIR}/${REPO_NAME%%-snapshot}/debian/control"
-if [[ ! -f  "${control}" ]]; then
-    die "control file not found"
-fi
+control="$("${SCRIPT_DIR}/metadata-debian-file.sh" "${REPO_NAME}" control)"
 
 repo="$(
     grep-dctrl \

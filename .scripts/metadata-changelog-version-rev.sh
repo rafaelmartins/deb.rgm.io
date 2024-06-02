@@ -7,10 +7,7 @@ source "${SCRIPT_DIR}/utils.sh"
 
 REPO_NAME="${1}"
 
-changelog="${ROOT_DIR}/${REPO_NAME%%-snapshot}/debian/changelog"
-if [[ ! -f  "${changelog}" ]]; then
-    die "changelog not found"
-fi
+changelog="$("${SCRIPT_DIR}/metadata-debian-file.sh" "${REPO_NAME}" changelog)"
 
 dpkg-parsechangelog \
     -l "${changelog}" \

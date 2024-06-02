@@ -21,7 +21,7 @@ trap 'rm -rf -- "${tmpdir}"' EXIT
 pushd "${SOURCE_DIR}" > /dev/null
 git clean -fdx
 mkdir -p "${tmpdir}/orig/${REPO_NAME}"
-"${ROOT_DIR}/${REPO_NAME}/orig.sh" "${tmpdir}/orig/${REPO_NAME}"
+"${ROOT_DIR}/${REPO_NAME%%-snapshot}/orig.sh" "${tmpdir}/orig/${REPO_NAME}"
 popd > /dev/null
 
 source="$(basename "$(
