@@ -224,18 +224,22 @@ jobs:
         build: ${{ fromJSON(needs.metadata-build.outputs.build) }}
 
     steps:
-      - name: Parse metadata
-        if: ${{ matrix.build != 'placeholder' }}
-        id: metadata
-        run: |
-          echo "repodir=$(echo ${{ matrix.build }} | cut -d' ' -f1)" >> $GITHUB_OUTPUT
-          echo "arch=$(echo ${{ matrix.build }} | cut -d' ' -f3)" >> $GITHUB_OUTPUT
-
       - name: Check out code
         if: ${{ matrix.build != 'placeholder' }}
         uses: actions/checkout@v4
         with:
           path: main
+
+      - name: Parse metadata
+        if: ${{ matrix.build != 'placeholder' }}
+        id: metadata
+        run: |
+          repodir="$(echo ${{ matrix.build }} | cut -d' ' -f1)"
+          if [[ "$(./main/.scripts/metadata-debian-file.sh "${repodir}" control)" != *-snapshot ]]; then
+            repodir="$(echo "${repodir}" | sed -e 's/-snapshot$//')"
+          fi
+          echo "repodir=${repodir}" >> $GITHUB_OUTPUT
+          echo "arch=$(echo ${{ matrix.build }} | cut -d' ' -f3)" >> $GITHUB_OUTPUT
 
       - name: Check out orig
         if: ${{ matrix.build != 'placeholder' }}
