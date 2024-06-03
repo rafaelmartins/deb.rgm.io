@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Mon, 03 Jun 2024 01:17:50 +0000
+Source: b8r
+Binary: b8r
+Architecture: arm64
+Version: 0.0.0.74-90e4-1~12bookworm
+Distribution: bookworm
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ b8r        - I don't know what I'm doing
+Changes:
+ b8r (0.0.0.74-90e4-1~12bookworm) bookworm; urgency=medium
+ .
+   * Automated build for bookworm
+Checksums-Sha1:
+ 79d66b35644571d9354761c8de34d05be3455341 5088 b8r_0.0.0.74-90e4-1~12bookworm_arm64.buildinfo
+ 693a44c1acf6474014fd2a8af0247a77bc755032 1628608 b8r_0.0.0.74-90e4-1~12bookworm_arm64.deb
+Checksums-Sha256:
+ 5777f04ebfb0de5b2a4d1821efe7655f97e00b8cf53132d473d7816bdb64f21e 5088 b8r_0.0.0.74-90e4-1~12bookworm_arm64.buildinfo
+ 1d3095a91c8f0002e56d614216f3aae09969f06731e09249f9f5089aeda1879a 1628608 b8r_0.0.0.74-90e4-1~12bookworm_arm64.deb
+Files:
+ ed9d88c24a83e31b9c706a4ffd25df57 5088 misc optional b8r_0.0.0.74-90e4-1~12bookworm_arm64.buildinfo
+ a450635b2c8c6a34a59bdc1e1ab53c6a 1628608 misc optional b8r_0.0.0.74-90e4-1~12bookworm_arm64.deb

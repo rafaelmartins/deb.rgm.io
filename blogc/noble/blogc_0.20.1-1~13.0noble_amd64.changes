@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Mon, 03 Jun 2024 01:17:55 +0000
+Source: blogc
+Binary: blogc blogc-git-receiver blogc-make blogc-runserver
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.20.1-1~13.0noble
+Distribution: noble
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ blogc      - Blog compiler
+ blogc-git-receiver - Blog compiler
+ blogc-make - Blog compiler
+ blogc-runserver - Blog compiler
+Changes:
+ blogc (0.20.1-1~13.0noble) noble; urgency=medium
+ .
+   * Automated build for noble
+Checksums-Sha1:
+ 5c4c6caf66fb4b2764ab4de8b71ee3e054593f29 20668 blogc-git-receiver_0.20.1-1~13.0noble_amd64.deb
+ 26b215606f5ba8ee845d59e750c7e47264afe370 32272 blogc-make_0.20.1-1~13.0noble_amd64.deb
+ adb7957c3b9d370122e473c252fb087b5b249292 17790 blogc-runserver_0.20.1-1~13.0noble_amd64.deb
+ c6041a2aa47b67d8cdaef1f4228d09e988022534 7708 blogc_0.20.1-1~13.0noble_amd64.buildinfo
+ e8292a56840c2fb911058862dacc6706d653a8d6 41980 blogc_0.20.1-1~13.0noble_amd64.deb
+Checksums-Sha256:
+ 32ae88d2abb336b65883846b367ab79335447897afa13f99bce497941d608de7 20668 blogc-git-receiver_0.20.1-1~13.0noble_amd64.deb
+ 9a7e62ba76dd6f7ee371b310de45de1a19ca344534d64414e4c4abc586fc674a 32272 blogc-make_0.20.1-1~13.0noble_amd64.deb
+ a55967255d2adacad263645295c46b338e0313126c9a869b0744258c3bd5a322 17790 blogc-runserver_0.20.1-1~13.0noble_amd64.deb
+ 26b246f8c86fee045b8d628f04cf234ec3b97bca10cc242565a19243f1b559a9 7708 blogc_0.20.1-1~13.0noble_amd64.buildinfo
+ 4bbeeb65116c0877ec5d78fcc66f923f5c2e5e0de144431d11220d6f3b2a6653 41980 blogc_0.20.1-1~13.0noble_amd64.deb
+Files:
+ d84d0ee043f0f94cc045c4d3c7a07dc9 20668 text optional blogc-git-receiver_0.20.1-1~13.0noble_amd64.deb
+ 0aa56db67b54eb9ad34c302a468b6bd4 32272 text optional blogc-make_0.20.1-1~13.0noble_amd64.deb
+ aa741173f6fa9ab33d9b29a34a61bf34 17790 text optional blogc-runserver_0.20.1-1~13.0noble_amd64.deb
+ 9732ed35cdac73d7b52eb5ae5a036a59 7708 text optional blogc_0.20.1-1~13.0noble_amd64.buildinfo
+ 8a1c64887b56e6b8f3a9ef9e4a4ca020 41980 text optional blogc_0.20.1-1~13.0noble_amd64.deb

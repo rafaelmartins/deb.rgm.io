@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Mon, 03 Jun 2024 01:17:55 +0000
+Source: blogc
+Binary: blogc blogc-git-receiver blogc-make blogc-runserver
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.20.1.29-b1ae-1~13.0noble
+Distribution: noble
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ blogc      - Blog compiler
+ blogc-git-receiver - Blog compiler
+ blogc-make - Blog compiler
+ blogc-runserver - Blog compiler
+Changes:
+ blogc (0.20.1.29-b1ae-1~13.0noble) noble; urgency=medium
+ .
+   * Automated build for noble
+Checksums-Sha1:
+ 09da38983ec95c36d8ea3429175b759d66ce106a 21270 blogc-git-receiver_0.20.1.29-b1ae-1~13.0noble_amd64.deb
+ 4c58178c11063a3294f2f698645bca5f51780b56 33830 blogc-make_0.20.1.29-b1ae-1~13.0noble_amd64.deb
+ a9db45aaf2d0ded07ffc44e35469508ea10ed686 18238 blogc-runserver_0.20.1.29-b1ae-1~13.0noble_amd64.deb
+ 4aaa93777bd7b7457b94abe8d66d007733d22a64 9411 blogc_0.20.1.29-b1ae-1~13.0noble_amd64.buildinfo
+ a20f25e1b9d674d6f779613d09604cd1d1776ebf 43184 blogc_0.20.1.29-b1ae-1~13.0noble_amd64.deb
+Checksums-Sha256:
+ 2bc72ad0eebb9b0d95fdf8d329ab549a208736b0a9bd78f3c948b4cf87e90d25 21270 blogc-git-receiver_0.20.1.29-b1ae-1~13.0noble_amd64.deb
+ 5667f5a0141ee87858630de6c928db507dc9c95c1c5b3f35e2e7f111ae2b32f0 33830 blogc-make_0.20.1.29-b1ae-1~13.0noble_amd64.deb
+ 6b51e7a866085282cccc768a31da7c7cb6c5d3b5b7f887697e85b0789d9ee5ac 18238 blogc-runserver_0.20.1.29-b1ae-1~13.0noble_amd64.deb
+ 5ccea45b2993bbb5fd81195ad28122b776fd56974bf0316c64774945bef7d3e4 9411 blogc_0.20.1.29-b1ae-1~13.0noble_amd64.buildinfo
+ 9b4e2c8261629b89a57a32a6ba9e9ffaae571329ea1c0a95338f3bfa9e3ae7db 43184 blogc_0.20.1.29-b1ae-1~13.0noble_amd64.deb
+Files:
+ 6f67785c8210244a7387628119bed23e 21270 text optional blogc-git-receiver_0.20.1.29-b1ae-1~13.0noble_amd64.deb
+ 46d99c8c8053325b0494c6cf8d757b2d 33830 text optional blogc-make_0.20.1.29-b1ae-1~13.0noble_amd64.deb
+ 658f378be77dee74d82aec470a6bbe1f 18238 text optional blogc-runserver_0.20.1.29-b1ae-1~13.0noble_amd64.deb
+ 7f421c4b252c744fe01a5034ca15f791 9411 text optional blogc_0.20.1.29-b1ae-1~13.0noble_amd64.buildinfo
+ c50fac964724f3609fb0e95ae7cbd15e 43184 text optional blogc_0.20.1.29-b1ae-1~13.0noble_amd64.deb
