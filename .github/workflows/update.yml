@@ -228,7 +228,7 @@ jobs:
         if: ${{ matrix.build != 'placeholder' }}
         id: metadata
         run: |
-          echo "repodir=$(echo ${{ matrix.build }} | cut -d' ' -f1 | sed -e 's/-snapshot$//')" >> $GITHUB_OUTPUT
+          echo "repodir=$(echo ${{ matrix.build }} | cut -d' ' -f1)" >> $GITHUB_OUTPUT
           echo "arch=$(echo ${{ matrix.build }} | cut -d' ' -f3)" >> $GITHUB_OUTPUT
 
       - name: Check out code

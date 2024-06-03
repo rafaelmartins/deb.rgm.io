@@ -49,7 +49,12 @@ for repo in $("${SCRIPT_DIR}/metadata-repos.sh"); do
                     build+=("${repo}-snapshot ${distro} ${arch}")
                     changelog["${repo}-snapshot ${distro} ${orig_ss_version_rev}"]=0
                     if [[ "${arch}" != source ]]; then
-                        bdeps+=("${repo} ${arch}")
+                        control="$("${SCRIPT_DIR}/metadata-debian-file.sh" "${REPO_NAME}" control)"
+                        if [[ "${control}" = *-snapshot ]]; then
+                            bdeps+=("${repo}-snapshot ${arch}")
+                        else
+                            bdeps+=("${repo} ${arch}")
+                        fi
                     fi
                 fi
             fi
