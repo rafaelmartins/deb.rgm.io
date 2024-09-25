@@ -195,12 +195,6 @@ jobs:
         with:
           path: main
 
-      - name: Setup QEMU
-        if: ${{ matrix.build != 'placeholder' && steps.metadata.outputs.arch == 'arm64' }}
-        uses: docker/setup-qemu-action@v3
-        with:
-          platforms: arm64
-
       - name: Run mk-build-deps
         if: ${{ matrix.build != 'placeholder' }}
         run: ./main/.scripts/build-deps.sh ./output ${{ matrix.build }}
