@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Wed, 25 Sep 2024 21:45:27 +0000
+Source: b8r
+Binary: b8r
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.0.0.79-2d56-1~13.0noble
+Distribution: noble
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ b8r        - I don't know what I'm doing
+Changes:
+ b8r (0.0.0.79-2d56-1~13.0noble) noble; urgency=medium
+ .
+   * Automated build for noble
+Checksums-Sha1:
+ d9a6cd27836e80b322176cd1dc4958e4ee9cba4c 5985 b8r_0.0.0.79-2d56-1~13.0noble_amd64.buildinfo
+ 492dce6e084e027f6f90ee41d7d0822b0655bc3a 2188106 b8r_0.0.0.79-2d56-1~13.0noble_amd64.deb
+Checksums-Sha256:
+ b6524de88e099de518a95bedfbfd54fed68783db1f0f568b90b343dd8c0be4b1 5985 b8r_0.0.0.79-2d56-1~13.0noble_amd64.buildinfo
+ 27b974e7a1a3b6e937427ea28821b3396775e6f41b5b7dd55de612d1d305c10b 2188106 b8r_0.0.0.79-2d56-1~13.0noble_amd64.deb
+Files:
+ a5a54eb7e0a6ed05a2b276c0fb1fe540 5985 misc optional b8r_0.0.0.79-2d56-1~13.0noble_amd64.buildinfo
+ e914f6ee81c4394f792bf550300946ee 2188106 misc optional b8r_0.0.0.79-2d56-1~13.0noble_amd64.deb

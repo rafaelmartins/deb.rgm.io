@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Wed, 25 Sep 2024 21:45:26 +0000
+Source: b8r
+Binary: b8r
+Architecture: amd64
+Version: 0.0.0.79-2d56-1~12bookworm
+Distribution: bookworm
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ b8r        - I don't know what I'm doing
+Changes:
+ b8r (0.0.0.79-2d56-1~12bookworm) bookworm; urgency=medium
+ .
+   * Automated build for bookworm
+Checksums-Sha1:
+ 42694283ebab9fd5ee54e9403cb7b2be96addc7a 5103 b8r_0.0.0.79-2d56-1~12bookworm_amd64.buildinfo
+ fd517cbf6aa8f8333e26279d20a5590277f6f66a 1907468 b8r_0.0.0.79-2d56-1~12bookworm_amd64.deb
+Checksums-Sha256:
+ 5403fa0a5ff4fa0f4bfdf0e5fb9e435ad549d7ac3c5360a062557b209c9b10ad 5103 b8r_0.0.0.79-2d56-1~12bookworm_amd64.buildinfo
+ 984caabf5a34008aeae3dce123202c709b9e242993689d3551b1c27ed0e9cff8 1907468 b8r_0.0.0.79-2d56-1~12bookworm_amd64.deb
+Files:
+ 0564940c4fe4d9f523ee9cb0b3771355 5103 misc optional b8r_0.0.0.79-2d56-1~12bookworm_amd64.buildinfo
+ a07f099f8a1b5fa973fab74d4510ae53 1907468 misc optional b8r_0.0.0.79-2d56-1~12bookworm_amd64.deb

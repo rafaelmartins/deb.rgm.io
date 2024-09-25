@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Wed, 25 Sep 2024 21:45:27 +0000
+Source: b8r
+Binary: b8r
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 0.0.0.79-2d56-1~13.0noble
+Distribution: noble
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ b8r        - I don't know what I'm doing
+Changes:
+ b8r (0.0.0.79-2d56-1~13.0noble) noble; urgency=medium
+ .
+   * Automated build for noble
+Checksums-Sha1:
+ 6796ad1f2386b67f12e076aa8a0ea4566a0ab965 5952 b8r_0.0.0.79-2d56-1~13.0noble_arm64.buildinfo
+ bdcd1c35bb65d3731b2117d6d6fca785cbd58772 1967704 b8r_0.0.0.79-2d56-1~13.0noble_arm64.deb
+Checksums-Sha256:
+ 19cebcb16d2da1059b332b686bf20ab3712c966f9547105b17ae62f8841e094d 5952 b8r_0.0.0.79-2d56-1~13.0noble_arm64.buildinfo
+ cad401dc5799ffe8b0aeaf359b6f9c5b57488dc3793b1a8552ad8fb2c7951c4c 1967704 b8r_0.0.0.79-2d56-1~13.0noble_arm64.deb
+Files:
+ 8bc90348d2cb8d8e9cd99911adda6c00 5952 misc optional b8r_0.0.0.79-2d56-1~13.0noble_arm64.buildinfo
+ 021e5af7d7440f684ac00c95b6e82b83 1967704 misc optional b8r_0.0.0.79-2d56-1~13.0noble_arm64.deb

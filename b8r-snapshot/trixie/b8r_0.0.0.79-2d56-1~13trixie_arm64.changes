@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Wed, 25 Sep 2024 21:45:26 +0000
+Source: b8r
+Binary: b8r
+Architecture: arm64
+Version: 0.0.0.79-2d56-1~13trixie
+Distribution: trixie
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ b8r        - I don't know what I'm doing
+Changes:
+ b8r (0.0.0.79-2d56-1~13trixie) trixie; urgency=medium
+ .
+   * Automated build for trixie
+Checksums-Sha1:
+ 12790e54a3bd13709d1b9e0dd6e2f211bc7a22c1 4663 b8r_0.0.0.79-2d56-1~13trixie_arm64.buildinfo
+ 86e32c49bf469411d70fe63d50e3b43902f5f750 1825288 b8r_0.0.0.79-2d56-1~13trixie_arm64.deb
+Checksums-Sha256:
+ f3616692e7b8fb17e7514b5c0ab4671fddbccb51ce7442533656fc47f355092f 4663 b8r_0.0.0.79-2d56-1~13trixie_arm64.buildinfo
+ 4b5751444a3c7ddd9c69cb2e02a2708a99ece6fc25bda86716d38433838a2455 1825288 b8r_0.0.0.79-2d56-1~13trixie_arm64.deb
+Files:
+ b4d385c39ce1fc9f16e3c9d219ba675c 4663 misc optional b8r_0.0.0.79-2d56-1~13trixie_arm64.buildinfo
+ 5ce3948e0297fb356b81f1fcab75c32f 1825288 misc optional b8r_0.0.0.79-2d56-1~13trixie_arm64.deb
