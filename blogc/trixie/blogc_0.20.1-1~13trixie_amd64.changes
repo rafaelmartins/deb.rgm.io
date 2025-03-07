@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Mon, 03 Jun 2024 01:17:52 +0000
+Source: blogc
+Binary: blogc blogc-git-receiver blogc-make blogc-runserver
+Architecture: amd64
+Version: 0.20.1-1~13trixie
+Distribution: trixie
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ blogc      - Blog compiler
+ blogc-git-receiver - Blog compiler
+ blogc-make - Blog compiler
+ blogc-runserver - Blog compiler
+Changes:
+ blogc (0.20.1-1~13trixie) trixie; urgency=medium
+ .
+   * Automated build for trixie
+Checksums-Sha1:
+ f18d5c88bdff3ae036f0e5eaae70088f2a0e1e86 19432 blogc-git-receiver_0.20.1-1~13trixie_amd64.deb
+ 702c3ca5cd977a2575bdb32a2106836c61ab2b19 30464 blogc-make_0.20.1-1~13trixie_amd64.deb
+ 79bd8f26e7444e1b9854c83c4f70817f9677d74f 16052 blogc-runserver_0.20.1-1~13trixie_amd64.deb
+ d1b51c61e9a94f3642c8dd5ad01c1fe33fa89ecb 6558 blogc_0.20.1-1~13trixie_amd64.buildinfo
+ 0e96a0791a67fae64f2e5b601ef49c65e4da22f5 40176 blogc_0.20.1-1~13trixie_amd64.deb
+Checksums-Sha256:
+ bcaffe6fa2459d79d6fe8e19acd2a2c9c844c35e296944e88f8230eb533a3963 19432 blogc-git-receiver_0.20.1-1~13trixie_amd64.deb
+ 41ed5021afc197fd830d1ef7662b402c0a04a3fb97b9919515cdee7556fae9c5 30464 blogc-make_0.20.1-1~13trixie_amd64.deb
+ f79f2d6eef414a0974da4dba36538c54a677ff6268c242adb36a636206dbd396 16052 blogc-runserver_0.20.1-1~13trixie_amd64.deb
+ d23dae93e3fa6ac6399ec11acefb6e1328fcc2a3f3b688751d1bea4883865ab7 6558 blogc_0.20.1-1~13trixie_amd64.buildinfo
+ f6ba60ba2b6e94606c620595e6d3687c20fba281568bed2f28fa87021b3e6760 40176 blogc_0.20.1-1~13trixie_amd64.deb
+Files:
+ 1a6170eb59d7380151157232c6ffc0b1 19432 text optional blogc-git-receiver_0.20.1-1~13trixie_amd64.deb
+ c3a48770d916e743757af6aee68eae0f 30464 text optional blogc-make_0.20.1-1~13trixie_amd64.deb
+ 006b67ad7647d3cb3ad6ebe46ea8ef7f 16052 text optional blogc-runserver_0.20.1-1~13trixie_amd64.deb
+ df46cdf7d68378183ad7b93385d2159e 6558 text optional blogc_0.20.1-1~13trixie_amd64.buildinfo
+ 20e55176a9a2ae45961f39ed37799c23 40176 text optional blogc_0.20.1-1~13trixie_amd64.deb

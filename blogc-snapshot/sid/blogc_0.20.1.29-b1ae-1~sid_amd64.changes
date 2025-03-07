@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Mon, 03 Jun 2024 01:17:53 +0000
+Source: blogc
+Binary: blogc blogc-git-receiver blogc-make blogc-runserver
+Architecture: amd64
+Version: 0.20.1.29-b1ae-1~sid
+Distribution: sid
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ blogc      - Blog compiler
+ blogc-git-receiver - Blog compiler
+ blogc-make - Blog compiler
+ blogc-runserver - Blog compiler
+Changes:
+ blogc (0.20.1.29-b1ae-1~sid) sid; urgency=medium
+ .
+   * Automated build for sid
+Checksums-Sha1:
+ 7eff1d21518a87142f85f09b30f7b68fdc8960b6 20144 blogc-git-receiver_0.20.1.29-b1ae-1~sid_amd64.deb
+ 3bd9370194bfa27b58ee84e936ac843d1db372ee 31944 blogc-make_0.20.1.29-b1ae-1~sid_amd64.deb
+ ae8183715aaa32e33019eaf86854c065ea949031 16648 blogc-runserver_0.20.1.29-b1ae-1~sid_amd64.deb
+ f68f56a005e4ff1a75632e5fabadb777b6b9474f 7916 blogc_0.20.1.29-b1ae-1~sid_amd64.buildinfo
+ 155f1cdaeda2ad9b00c5042a57eddc21dc61d73e 41660 blogc_0.20.1.29-b1ae-1~sid_amd64.deb
+Checksums-Sha256:
+ 6ea68441a2a6ae20e888594acbbd17e4d08a6f60f685d073a43d344eb63f9e42 20144 blogc-git-receiver_0.20.1.29-b1ae-1~sid_amd64.deb
+ 4f382093999be276dfad44a7c168191a167906179fc271de8374b770f6434b5d 31944 blogc-make_0.20.1.29-b1ae-1~sid_amd64.deb
+ f276589255c5a65001f8e8be0121851050ed5fd0f95b509ecf7f4d356d2a7f3e 16648 blogc-runserver_0.20.1.29-b1ae-1~sid_amd64.deb
+ 0849afcbea1bab21c055228e320efc7fe60de102c8fa7df8123b2ccce6279f43 7916 blogc_0.20.1.29-b1ae-1~sid_amd64.buildinfo
+ 2827dc5ed37dedde085aa1fd584a43da930f863e905d4a1a1784275653429d63 41660 blogc_0.20.1.29-b1ae-1~sid_amd64.deb
+Files:
+ 10527a75eecccb8f5ae806256916ae97 20144 text optional blogc-git-receiver_0.20.1.29-b1ae-1~sid_amd64.deb
+ e381e6419a9437f36c83b22484e178dc 31944 text optional blogc-make_0.20.1.29-b1ae-1~sid_amd64.deb
+ 20d9c868e8e39b182540fc1915041efd 16648 text optional blogc-runserver_0.20.1.29-b1ae-1~sid_amd64.deb
+ 937d63d46ca3e16e0debb841d5660ef6 7916 text optional blogc_0.20.1.29-b1ae-1~sid_amd64.buildinfo
+ 2b7d5f82fcbbc464f9e77f07ba6b98f2 41660 text optional blogc_0.20.1.29-b1ae-1~sid_amd64.deb

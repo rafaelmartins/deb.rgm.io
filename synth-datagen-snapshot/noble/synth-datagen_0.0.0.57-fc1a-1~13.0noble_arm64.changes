@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Fri, 07 Mar 2025 03:24:27 +0000
+Source: synth-datagen
+Binary: synth-datagen
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 0.0.0.57-fc1a-1~13.0noble
+Distribution: noble
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ synth-datagen - A tool that generates C data headers for synthesizer waveforms an
+Changes:
+ synth-datagen (0.0.0.57-fc1a-1~13.0noble) noble; urgency=medium
+ .
+   * Automated build for noble
+Checksums-Sha1:
+ d796f2ac411d1d6e240864b09587dd026c682654 6082 synth-datagen_0.0.0.57-fc1a-1~13.0noble_arm64.buildinfo
+ 8d1cba5828a4c38839cd87abfcf1dfd5f22c0b54 1429352 synth-datagen_0.0.0.57-fc1a-1~13.0noble_arm64.deb
+Checksums-Sha256:
+ b64ebbeeb95bb1a1130ad5b377cfff1f97fca36453dcc1d10edec09c4b6ad673 6082 synth-datagen_0.0.0.57-fc1a-1~13.0noble_arm64.buildinfo
+ eaf85d30dde1120b42124a7ed17e4aafb711a348563d891218c51bd30b8ca588 1429352 synth-datagen_0.0.0.57-fc1a-1~13.0noble_arm64.deb
+Files:
+ 2e208d26c300d531a5c7c0c250d9ab74 6082 devel optional synth-datagen_0.0.0.57-fc1a-1~13.0noble_arm64.buildinfo
+ c9ecf9656b1bb6c703c4b32e4fce2383 1429352 devel optional synth-datagen_0.0.0.57-fc1a-1~13.0noble_arm64.deb

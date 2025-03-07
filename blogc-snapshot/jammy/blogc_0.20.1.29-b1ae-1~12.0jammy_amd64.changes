@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Mon, 03 Jun 2024 01:17:53 +0000
+Source: blogc
+Binary: blogc blogc-git-receiver blogc-make blogc-runserver
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.20.1.29-b1ae-1~12.0jammy
+Distribution: jammy
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ blogc      - Blog compiler
+ blogc-git-receiver - Blog compiler
+ blogc-make - Blog compiler
+ blogc-runserver - Blog compiler
+Changes:
+ blogc (0.20.1.29-b1ae-1~12.0jammy) jammy; urgency=medium
+ .
+   * Automated build for jammy
+Checksums-Sha1:
+ 41f5f3ca1e854ce1124cd1e1575d1270993086d2 22626 blogc-git-receiver_0.20.1.29-b1ae-1~12.0jammy_amd64.deb
+ 07d5b2202b929e480a798ce80f5448547a331557 35182 blogc-make_0.20.1.29-b1ae-1~12.0jammy_amd64.deb
+ 4960a978b5eada1e08df1ff8ac5ab87481f5ab69 18442 blogc-runserver_0.20.1.29-b1ae-1~12.0jammy_amd64.deb
+ d9c825a0c03f83abff83d457f8ffd854b1577be5 9269 blogc_0.20.1.29-b1ae-1~12.0jammy_amd64.buildinfo
+ 80168ce8d6906ba48a449156784bbcc3fea302d6 44686 blogc_0.20.1.29-b1ae-1~12.0jammy_amd64.deb
+Checksums-Sha256:
+ 38475e9c8f4198fba08c9d31b80dde90afd839ebaba2316537de0a889033c42f 22626 blogc-git-receiver_0.20.1.29-b1ae-1~12.0jammy_amd64.deb
+ aabbaa58765914dabd1a5d41bdfacf637c15e94fe86f638ec95970197adfa6fa 35182 blogc-make_0.20.1.29-b1ae-1~12.0jammy_amd64.deb
+ 7038bc5b243cc4f1ff3b39aa3d51d1aeec554f2cc148b9b71fd76d468ff4049b 18442 blogc-runserver_0.20.1.29-b1ae-1~12.0jammy_amd64.deb
+ 9ccdb3f84e68b49261963e0af174c9680d59420e38a7d19ecb6200d40627d50d 9269 blogc_0.20.1.29-b1ae-1~12.0jammy_amd64.buildinfo
+ 58cc0baf195858368c0655c1540d7e68aec216140685fe58d1988d1deb94d0c5 44686 blogc_0.20.1.29-b1ae-1~12.0jammy_amd64.deb
+Files:
+ 657558d949b269cf502cd49860e1f5f9 22626 text optional blogc-git-receiver_0.20.1.29-b1ae-1~12.0jammy_amd64.deb
+ 3fcef8bad6c5f3794fd23932e1057636 35182 text optional blogc-make_0.20.1.29-b1ae-1~12.0jammy_amd64.deb
+ 7d961f50e6335d4ad57a582dc475d036 18442 text optional blogc-runserver_0.20.1.29-b1ae-1~12.0jammy_amd64.deb
+ be3bb4c562a9700bbd2988225901c1af 9269 text optional blogc_0.20.1.29-b1ae-1~12.0jammy_amd64.buildinfo
+ aaa80c12149f8d4517c3d8413c89aa8a 44686 text optional blogc_0.20.1.29-b1ae-1~12.0jammy_amd64.deb

@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Sat, 02 Nov 2024 10:03:11 +0000
+Source: b8r
+Binary: b8r
+Architecture: amd64
+Version: 0.0.0.81-559e-1~sid
+Distribution: sid
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ b8r        - I don't know what I'm doing
+Changes:
+ b8r (0.0.0.81-559e-1~sid) sid; urgency=medium
+ .
+   * Automated build for sid
+Checksums-Sha1:
+ f149171590db55e26792ca4a47da78871a2b53d7 4684 b8r_0.0.0.81-559e-1~sid_amd64.buildinfo
+ e58b5dee982c5eb723528fe3e27de0a1e7d4b9b6 2126364 b8r_0.0.0.81-559e-1~sid_amd64.deb
+Checksums-Sha256:
+ 9004c0a8a3fb8ba9a8f4c94f374d6cb13ef0cd81000782e95214bd6a46430c2b 4684 b8r_0.0.0.81-559e-1~sid_amd64.buildinfo
+ a6537fcf37d2afff5d82d0d472d00096916061927dfe5f0d0bf88894fab09a15 2126364 b8r_0.0.0.81-559e-1~sid_amd64.deb
+Files:
+ b799c6b37a3b77b073830b68b25cf4b4 4684 misc optional b8r_0.0.0.81-559e-1~sid_amd64.buildinfo
+ 50ef9cace38270cb25411ecc9372e84f 2126364 misc optional b8r_0.0.0.81-559e-1~sid_amd64.deb
