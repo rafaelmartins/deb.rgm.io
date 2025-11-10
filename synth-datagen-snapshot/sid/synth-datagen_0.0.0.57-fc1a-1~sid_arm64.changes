@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Fri, 07 Mar 2025 03:24:25 +0000
+Source: synth-datagen
+Binary: synth-datagen
+Architecture: arm64
+Version: 0.0.0.57-fc1a-1~sid
+Distribution: sid
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ synth-datagen - A tool that generates C data headers for synthesizer waveforms an
+Changes:
+ synth-datagen (0.0.0.57-fc1a-1~sid) sid; urgency=medium
+ .
+   * Automated build for sid
+Checksums-Sha1:
+ 151f3f8b1af88a216ee01b899c0a9aa62f61e16c 4734 synth-datagen_0.0.0.57-fc1a-1~sid_arm64.buildinfo
+ a247b1ba585c2109d0e6df21249923790efb7e0f 1320020 synth-datagen_0.0.0.57-fc1a-1~sid_arm64.deb
+Checksums-Sha256:
+ 507540e1880efd773d730a6f1da33201846d00e7a4db41c610fd1b3afffe32bd 4734 synth-datagen_0.0.0.57-fc1a-1~sid_arm64.buildinfo
+ 61b1b1fb8754aaa44cf9bf24427d3477f565795d3a0bfc4eb1af00d701f8210a 1320020 synth-datagen_0.0.0.57-fc1a-1~sid_arm64.deb
+Files:
+ 2c49b57818914626ef9457f888a1cda1 4734 devel optional synth-datagen_0.0.0.57-fc1a-1~sid_arm64.buildinfo
+ 0b4d32387784b061234d0aaab911b594 1320020 devel optional synth-datagen_0.0.0.57-fc1a-1~sid_arm64.deb

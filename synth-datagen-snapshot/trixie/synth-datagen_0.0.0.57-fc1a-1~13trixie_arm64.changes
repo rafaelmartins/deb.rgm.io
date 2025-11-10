@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Fri, 07 Mar 2025 03:24:26 +0000
+Source: synth-datagen
+Binary: synth-datagen
+Architecture: arm64
+Version: 0.0.0.57-fc1a-1~13trixie
+Distribution: trixie
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ synth-datagen - A tool that generates C data headers for synthesizer waveforms an
+Changes:
+ synth-datagen (0.0.0.57-fc1a-1~13trixie) trixie; urgency=medium
+ .
+   * Automated build for trixie
+Checksums-Sha1:
+ f40742791b1e1e71c13c3a6c05758cbe9610bb8e 4757 synth-datagen_0.0.0.57-fc1a-1~13trixie_arm64.buildinfo
+ 52b929cace08686d0d1aad8f1859ce20a2cf862f 1317820 synth-datagen_0.0.0.57-fc1a-1~13trixie_arm64.deb
+Checksums-Sha256:
+ c417f26d74b3eecb9f3cc5ddce4f0ea369308776c038f1faa25449c0eb438d46 4757 synth-datagen_0.0.0.57-fc1a-1~13trixie_arm64.buildinfo
+ 48e130eaede8dc567d23a1d006de444d1fcd37902d90e43fa81b535f1417d177 1317820 synth-datagen_0.0.0.57-fc1a-1~13trixie_arm64.deb
+Files:
+ 419bbea0e8fe3ab7d05dba9e463a4172 4757 devel optional synth-datagen_0.0.0.57-fc1a-1~13trixie_arm64.buildinfo
+ f3b3c2833aa8d18e4db10a32d0775f98 1317820 devel optional synth-datagen_0.0.0.57-fc1a-1~13trixie_arm64.deb

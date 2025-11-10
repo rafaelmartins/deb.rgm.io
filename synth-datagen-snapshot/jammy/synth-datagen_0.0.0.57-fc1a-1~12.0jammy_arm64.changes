@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Fri, 07 Mar 2025 03:24:26 +0000
+Source: synth-datagen
+Binary: synth-datagen
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 0.0.0.57-fc1a-1~12.0jammy
+Distribution: jammy
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ synth-datagen - A tool that generates C data headers for synthesizer waveforms an
+Changes:
+ synth-datagen (0.0.0.57-fc1a-1~12.0jammy) jammy; urgency=medium
+ .
+   * Automated build for jammy
+Checksums-Sha1:
+ 0307314d5ecc597d67af611b112c61ee03782964 6047 synth-datagen_0.0.0.57-fc1a-1~12.0jammy_arm64.buildinfo
+ b53586f37de5de156f8619d23fbb4a014aee53df 1362382 synth-datagen_0.0.0.57-fc1a-1~12.0jammy_arm64.deb
+Checksums-Sha256:
+ 99b0244f27ec166a6f7e6eeccbc789d83eab510e6df6554883fabb720efdb8db 6047 synth-datagen_0.0.0.57-fc1a-1~12.0jammy_arm64.buildinfo
+ 9f13cdf9cc89e2ab9da5194ce119402cb05198299a126cee4746831c39af1f1f 1362382 synth-datagen_0.0.0.57-fc1a-1~12.0jammy_arm64.deb
+Files:
+ f61a09ac73fc754ce0728302b401b318 6047 devel optional synth-datagen_0.0.0.57-fc1a-1~12.0jammy_arm64.buildinfo
+ cc4d86106169f15887a6abd3a49c3152 1362382 devel optional synth-datagen_0.0.0.57-fc1a-1~12.0jammy_arm64.deb

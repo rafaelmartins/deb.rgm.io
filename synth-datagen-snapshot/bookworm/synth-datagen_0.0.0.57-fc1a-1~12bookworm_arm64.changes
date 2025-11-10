@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Fri, 07 Mar 2025 03:24:26 +0000
+Source: synth-datagen
+Binary: synth-datagen
+Architecture: arm64
+Version: 0.0.0.57-fc1a-1~12bookworm
+Distribution: bookworm
+Urgency: medium
+Maintainer: Rafael G. Martins <rafael@rafaelmartins.eng.br>
+Changed-By: Automatic Builder (github-actions) <rafael+deb@rafaelmartins.eng.br>
+Description:
+ synth-datagen - A tool that generates C data headers for synthesizer waveforms an
+Changes:
+ synth-datagen (0.0.0.57-fc1a-1~12bookworm) bookworm; urgency=medium
+ .
+   * Automated build for bookworm
+Checksums-Sha1:
+ 39cec7ff90faa9e5c1de8921086368a85f9eb00d 5131 synth-datagen_0.0.0.57-fc1a-1~12bookworm_arm64.buildinfo
+ d9e4da5c977825d0efe7ee356a4856cf352978de 1205060 synth-datagen_0.0.0.57-fc1a-1~12bookworm_arm64.deb
+Checksums-Sha256:
+ 7c3bb6397a6b1971a33030d4c131a70b772b7b894c5862fa22edec92dee33aad 5131 synth-datagen_0.0.0.57-fc1a-1~12bookworm_arm64.buildinfo
+ 44f1af7bffb8d991dcfe40192970daf2a33ba8a9272f5b451ebb150acf4beaa2 1205060 synth-datagen_0.0.0.57-fc1a-1~12bookworm_arm64.deb
+Files:
+ 89cface0e8056c227afeecffac64cafb 5131 devel optional synth-datagen_0.0.0.57-fc1a-1~12bookworm_arm64.buildinfo
+ 9d3250a409c89214001b7d359ef8e330 1205060 devel optional synth-datagen_0.0.0.57-fc1a-1~12bookworm_arm64.deb
